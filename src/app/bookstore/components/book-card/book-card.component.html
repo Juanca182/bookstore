@@ -1,0 +1,34 @@
+
+      
+        <div class="card h-100">
+          <img class="card-img-top  shadow-sm my-2 ms-4" [src]="book | formatsImage" alt="book image" width="80%">
+          <div class="card-body">    
+                  <h5 class="card-title py-auto mb-3">{{ book.title }}</h5>     
+            <p class="card-text fw-bold text-muted">  {{ book | author: false }}</p>
+            <div class="row">
+              <div class="col-3">
+                <span class=" badge rounded-pill bg-primary">{{ book.languages }}</span>
+              </div>
+              <div class="col justify-content-end">
+                <a class=" btn float-end"
+                   data-bs-toggle="modal"
+                   data-bs-target="#exampleModal"
+                   [routerLink]="['/book', book.id ]"><small >
+                      See more
+                    </small></a>
+              </div>
+                 
+                 
+            </div>
+          </div>
+        </div>
+
+        
+
+        
+        
+      
+
+
+
+  

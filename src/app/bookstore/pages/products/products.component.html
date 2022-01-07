@@ -1,0 +1,68 @@
+<main >
+    <section>
+        <div class="container">
+            <div class="container">
+                <h1 class="fw-bold display-6 text-center py-5">Products</h1>
+                <div class="row justify-content-end">
+                    
+    
+                    <div class="col-4 ">
+                        <form (ngSubmit)="search()" autocomplete="off">
+                            <input type="text"
+                                   name="termino"
+                                   class="form-control w-100 search-bar"
+                                   [(ngModel)]="term"
+                                   placeholder="search" >
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <pagination-controls *ngIf="books.length > 0"
+              (pageChange)="p = $event"></pagination-controls>
+    
+              
+                  <div  *ngIf="error"
+                        class="alert alert-danger w-25 float-end me-5 mt-1">
+                      Nothing was found with the term: {{ term }}
+                  </div>
+              
+
+            <div class="text-center" *ngIf="!loaded">
+                <div class="spinner-border" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+    
+            
+    
+            <div class="container mx-auto mt-4" >
+                <div  class="row" >
+                    <div *ngFor="let book of books | paginate: { itemsPerPage: 12, currentPage: p }"
+                         class="col-md-3 py-3">
+                         <app-book-card [book]="book"></app-book-card>
+
+                    </div>
+                    
+                </div>
+    
+            </div>
+            
+            <router-outlet></router-outlet>
+            
+
+            
+
+
+        </div>
+
+        
+    </section>
+</main>
+
+
+
+
+  
+  
+

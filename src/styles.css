@@ -1,1 +1,151 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.home-sub {
+    color: #44b89d;
+}
+
+.navbar {
+    background-color: #063547 ;
+    
+}
+
+.nav-link {
+    color: white !important ;
+    }
+
+  .button-color {
+      background-color: #44b89d !important;
+      border-radius: 30px;
+      color: white;
+  }
+
+  .carousel-main {
+      padding-right: 6.5em;
+  }
+
+
+
+.contact-input {
+    border-radius: 1rem;
+}
+
+
+
+.card-sl {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-image img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.card-action {
+    position: relative;
+    background-color: #063547 !important;
+    float: left;
+    margin: -18px 20px 0 15px;
+    z-index: 2;
+    color: #ffffff;
+    background: #fff;
+    border-radius: 15rem;
+    border: solid 2px white;
+    padding: 5px;
+    font-size: 13px;
+    text-align: center;
+    width: 115px;
+    height: 30px;
+}
+
+
+
+.card-heading {
+    font-size: 16px;
+    background: #fff;
+    padding: 20px 15px  1px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.card-button {
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    margin-bottom: 1px;
+    color: #44b89d;
+    font-size: small;
+    
+}
+
+.modal-img{
+    padding-left: 1px;
+}
+
+.checked {
+    color: orange;
+  }
+
+  .modal-comments {
+      width: 90%;
+  }
+
+footer {
+      background-color: #063547 ;
+      color: white ;
+  }
+
+footer a {
+      font-size: 25px;
+  }
+
+.blog-section {
+      background-color: #f5f6f9;
+}
+
+.search-bar {
+      border-radius: 20px;
+  }
+
+  .btn-carousel-prev {
+    position: relative;
+    background-color: #063547 !important;
+    border-color: #063547 ;
+    float: left;
+    margin: -21px 20px 0 17px;
+    z-index: 2;
+    border-radius: 15rem;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+  }
+
+.carousel-control-prev-icon {
+      width: 20px;
+      margin: -2px;
+  }
+
+.btn-carousel-next {
+    position: relative;
+    background-color: #063547 !important;
+    border-color: #063547 ;
+    float: left;
+    margin: -41px 25px 0 40px;
+    z-index: 2;
+    border-radius: 15rem;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+  }
+
+.carousel-control-next-icon {
+    width: 20px;
+    margin: -2px;
+}
+
+
+
